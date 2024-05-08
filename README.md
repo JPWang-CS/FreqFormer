@@ -23,9 +23,21 @@ Coming Soon.
 This codebase was tested with the following environment configurations. It may work with other versions.
 
 - Ubuntu 22.04
-- CUDA 12.2
-- Python 3.9
-- PyTorch 2.1.0 + cu124
+- CUDA 12.0
+- Python 3.11
+- PyTorch 2.1.0 + cu121
+
+We suggest installing the appropriate version of PyTorch based on your hardware configuration.
+
+```shell
+git clone https://github.com/JPWang-CS/FreqFormer.git
+conda create -n FreqFormer python=3.11
+conda activate FreqFormer
+pip install -r requirements.txt
+python setup.py develop
+```
+
+
 
 ---
 
@@ -45,16 +57,16 @@ Download training and testing datasets and put them into the corresponding folde
 
 - Run the following scripts. The training configuration is in `options/train/`.
 
-  ```shell
+```shell
   # CUDA_VISIBLE_DEVICES=0,1 to choose gpus
   # FreqFormer_x2, input=64x64, 2 GPUs
   python -m torch.distributed.run --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt options/Train/train_FreqFormer_x2.yml --launcher pytorch
   # FreqFormer_x3, input=64x64, 2 GPUs
   python -m torch.distributed.run --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt options/Train/train_FreqFormer_x3.yml --launcher pytorch
   # FreqFormer_x4, input=64x64, 2 GPUs
-  python -m torch.distributed.run --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt options/Train/train_FreqFormer_x4.yml  --launcher pytorch
+  python -m torch.distributed.run --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt options/Train/train_FreqFormer_x4.yml --launcher pytorch
   
-  ```
+```
   
 - The training results is in `experiments/`.
 
@@ -70,7 +82,7 @@ Coming soon.
 ## Citation
 
 If you find the code helpful in your research or work, please cite the following paper(s).
-```shell
+```
 @inproceedings{freq2024,
     title={FreqFormer: Frequency-aware Transformer for Lightweight Image Super-resolution},
     author={Tao Dai, Jianping Wang, Hang Guo, Jinmin Li, Jinbao Wang and Zexuan Zhu},

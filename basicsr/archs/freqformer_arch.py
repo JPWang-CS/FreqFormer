@@ -897,7 +897,7 @@ class UpsampleOneStep(nn.Sequential):
         return flops
 
 
-# @ARCH_REGISTRY.register()
+@ARCH_REGISTRY.register()
 class FreqFormer(nn.Module):
     """ FreqFormer: Frequency-aware Transformer.
     Args:
