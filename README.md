@@ -1,6 +1,5 @@
 ## FreqFormer: Frequency-aware Transformer for Lightweight Image Super-resolution
 
----
 [Tao Dai](https://cstaodai.com/), [Jianping Wang](https://github.com/JPWang-CS), [Hang Guo](https://github.com/csguoh), 
 [Jinmin Li](https://github.com/THU-Kingmin), Jinbao Wang\* and Zexuan Zhu\*
 
@@ -63,7 +62,6 @@ Download training and testing datasets and put them into the corresponding folde
 
 ## Testing
 
-Still testing.
 Coming soon.
 
 
