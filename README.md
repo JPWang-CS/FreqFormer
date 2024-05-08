@@ -79,8 +79,18 @@ Download training and testing datasets and put them into the corresponding folde
 
 ## Testing
 
-Coming soon.
+Download [testing](https://drive.google.com/file/d/1yMbItvFKVaCT93yPWmlP3883XtJ-wSee/view?usp=sharing) (Set5, Set14, BSD100, Urban100, Manga109) datasets, place them in `datasets/`.
 
+Run the following scripts. The testing configuration is in `options/test/` .
+
+```shell
+  # FreqFormer_x2
+  python basicsr/test.py -opt options/Test/test_FreqFormer_x2.yml
+  # FreqFormer_x3
+  python basicsr/test.py -opt options/Test/test_FreqFormer_x3.yml
+  # FreqFormer_x4
+  python basicsr/test.py -opt options/Test/test_FreqFormer_x4.yml
+```
 
 ---
 
