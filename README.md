@@ -14,7 +14,12 @@
 
 ## Results
 
-Coming Soon.
+We achieve state-of-the-art performance on various image super-resolution tasks. Detailed results can be found in the paper.
+
+**Evaluation on light-weight SR**
+<p align="center">
+<img width="650" src="assets/lightweightSR.png">
+</p>
 
 ---
 
