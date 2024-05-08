@@ -19,6 +19,17 @@ Coming Soon.
 
 ---
 
+## Installation
+
+This codebase was tested with the following environment configurations. It may work with other versions.
+
+- Ubuntu 22.04
+- CUDA 12.2
+- Python 3.9
+- PyTorch 2.1.0 + cu124
+
+---
+
 ## Datasets
 
 Used training and testing sets can be downloaded as follows:
