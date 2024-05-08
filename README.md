@@ -13,6 +13,12 @@
 
 ---
 
+## Results
+
+Coming Soon.
+
+---
+
 ## Datasets
 
 Used training and testing sets can be downloaded as follows:
@@ -44,14 +50,25 @@ Download training and testing datasets and put them into the corresponding folde
 
 ---
 
-## Coming Soon
+## Testing
+
+Still testing.
+Coming soon.
 
 
 ---
 
 ## Citation
 
-
+If you find the code helpful in your research or work, please cite the following paper(s).
+```shell
+@inproceedings{freq2024,
+    title={FreqFormer: Frequency-aware Transformer for Lightweight Image Super-resolution},
+    author={Tao Dai, Jianping Wang, Hang Guo, Jinmin Li, Jinbao Wang and Zexuan Zhu},
+    booktitle={IJCAI},
+    year={2024}
+}
+  ```
 ---
 ## Acknowledgements
 This code is built on  [BasicSR](https://github.com/XPixelGroup/BasicSR).
