@@ -14,7 +14,7 @@
 
 ## Results
 
-We achieve state-of-the-art performance on various image super-resolution tasks. Detailed results can be found in the paper.
+We achieve state-of-the-art performance on image super-resolution. Detailed results can be found in the paper.
 
 **Evaluation on light-weight SR**
 <p align="center">
@@ -98,7 +98,7 @@ Run the following scripts. The testing configuration is in `options/test/` .
 
 If you find the code helpful in your research or work, please cite the following paper(s).
 ```
-@inproceedings{freq2024,
+@inproceedings{freqformer2024,
     title={FreqFormer: Frequency-aware Transformer for Lightweight Image Super-resolution},
     author={Tao Dai, Jianping Wang, Hang Guo, Jinmin Li, Jinbao Wang and Zexuan Zhu},
     booktitle={IJCAI},
